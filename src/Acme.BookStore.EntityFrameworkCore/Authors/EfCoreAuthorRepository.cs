@@ -37,7 +37,7 @@ public class EfCoreAuthorRepository
             .WhereIf(
                 !filter.IsNullOrWhiteSpace(),
                 author => author.Name.Contains(filter)
-             )
+            )
             .OrderBy(sorting)
             .Skip(skipCount)
             .Take(maxResultCount)

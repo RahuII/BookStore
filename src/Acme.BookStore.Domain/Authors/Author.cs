@@ -43,4 +43,3 @@ public class Author : FullAuditedAggregateRoot<Guid>
         );
     }
 }
-

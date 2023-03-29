@@ -13,10 +13,12 @@
     PageLayout.Content.MenuItemName = "BooksStore";
     PageLayout.Content.Title = L["Books"].Value;
 }
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts
     {
     <abp-script src="/Pages/Books/Index.js" />
 }
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section content_toolbar {
     @if (await AuthorizationService.IsGrantedAsync(BookStorePermissions.Books.Create))
     {

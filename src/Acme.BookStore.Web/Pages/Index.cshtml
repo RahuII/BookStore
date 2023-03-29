@@ -5,9 +5,11 @@
 @model Acme.BookStore.Web.Pages.IndexModel
 @inject IHtmlLocalizer<BookStoreResource> L
 @inject ICurrentUser CurrentUser
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {
 <abp-style src="/Pages/Index.css" />
 }
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
 <abp-script src="/Pages/Index.js" />
 }

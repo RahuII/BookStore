@@ -98,9 +98,9 @@ public class BookStoreDbContext :
         {
             b.ToTable(BookStoreConsts.DbTablePrefix + "Authors",
                 BookStoreConsts.DbSchema);
-
+    
             b.ConfigureByConvention();
-
+    
             b.Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(AuthorConsts.MaxNameLength);
